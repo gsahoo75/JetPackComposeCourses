@@ -15,6 +15,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
@@ -75,8 +76,10 @@ fun ScrollableText(){
     ){
         Text(
             modifier = Modifier.basicMarquee(),
-            text = "hey this is some random line to scroll",
-            fontSize = 50.sp
+            text = "hey this is some random line to scroll".repeat(50),
+            maxLines = 2,
+            fontSize = 50.sp,
+            overflow = TextOverflow.Ellipsis
         )
     }
 }
