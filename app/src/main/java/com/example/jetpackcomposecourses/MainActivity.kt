@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcomposecourses.`4_LayoutComposables`.LazyColumExample
 import com.example.jetpackcomposecourses.`5_BottomSheet`.PartialBottomSheet
+import com.example.jetpackcomposecourses.`6_Cards`.ElevatedCardExample
 import com.example.jetpackcomposecourses.ui.theme.JetPackComposeCoursesTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetPackComposeCoursesTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    PartialBottomSheet()
+                    ElevatedCardExample()
                 }
             }
         }
